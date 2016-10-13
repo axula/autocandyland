@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Automated Candyland</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body><div class="container">
+    
+    <div class="row">
+        <div class="col-md-12">
+            <hgroup id="header">
+                <h1>Automated Candyland <button id="play-button" onclick="play()" type="button" class="btn btn-lg btn-success" disabled>Play!</button></h1>
+                <h2>Plays out a full 2-4 player game instantly!</h2>
+            </hgroup>
+            <div id="player-pieces">
+                <div class="player-piece">
+                    <div id="add-blue" class="img-circle add-player"><span class="glyphicon glyphicon-plus" aria-hidden="true" title="Add Player"></span></div>
+                    <div id="group-blue" class="player-group hide">
+                        <div class="winner"><img id="blue-crown" class="hide" src="images/crown.png" /></div>
+                        <a href="#" class="remove-player">
+                            <img src="images/player_blue.png" />
+                            <div class="overlay-remove">
+                                <div class="img-circle remove-button"><span class="glyphicon glyphicon-minus" aria-hidden="true" title="Remove Player"></span></div>
+                            </div>
+                        </a>
+                        <input name="blue" type="text" class="form-control player-name" value="Blue" />
+                    </div>
+                </div>
+                <div class="player-piece">
+                    <div id="add-red" class="img-circle add-player"><span class="glyphicon glyphicon-plus" aria-hidden="true" title="Add Player"></span></div>
+                    <div class="player-group hide">
+                        <div class="winner"><img id="red-crown" class="hide" src="images/crown.png" /></div>
+                        <a class="remove-player">
+                            <img src="images/player_red.png" />
+                            <div class="overlay-remove">
+                                <div class="img-circle remove-button"><span class="glyphicon glyphicon-minus" aria-hidden="true" title="Remove Player"></span></div>
+                            </div>
+                        </a>
+                        <input name="red" type="text" class="form-control player-name" value="Red" />
+                    </div>
+                </div>
+                <div class="player-piece">
+                    <div id="add-yellow" class="img-circle add-player"><span class="glyphicon glyphicon-plus" aria-hidden="true" title="Add Player"></span></div>
+                    <div class="player-group hide">
+                        <div class="winner"><img id="yellow-crown" class="hide" src="images/crown.png" /></div>
+                        <a class="remove-player">
+                            <img src="images/player_yellow.png" />
+                            <div class="overlay-remove">
+                                <div class="img-circle remove-button"><span class="glyphicon glyphicon-minus" aria-hidden="true" title="Remove Player"></span></div>
+                            </div>
+                        </a>
+                        <input name="yellow" type="text" class="form-control player-name" value="Yellow" />
+                    </div>
+                </div>
+                <div class="player-piece">
+                    <div id="add-green" class="img-circle add-player"><span class="glyphicon glyphicon-plus" aria-hidden="true" title="Add Player"></span></div>
+                    <div class="player-group hide">
+                        <div class="winner"><img id="green-crown" class="hide" src="images/crown.png" /></div>
+                        <a class="remove-player">
+                            <img src="images/player_green.png" />
+                            <div class="overlay-remove">
+                                <div class="img-circle remove-button"><span class="glyphicon glyphicon-minus" aria-hidden="true" title="Remove Player"></span></div>
+                            </div>
+                        </a>
+                        <input name="green" type="text" class="form-control player-name" value="Green" />
+                    </div>
+                </div>
+            </div><!-- #player-pieces -->
+            <div id="messages"><p></p></div>
+        </div><!-- .col-md-12 -->
+    </div><!-- .row -->
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/game.js"></script>
+<script src="js/script.js"></script>
+</div></body>
+</html>
